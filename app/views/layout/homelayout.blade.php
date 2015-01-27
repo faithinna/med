@@ -47,21 +47,21 @@
                 <li id="about"><a  href="{{URL::route('about')}}"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
                 <li id="contact"><a  href="{{URL::route('contact')}}"><span class="glyphicon glyphicon-earphone"></span> Contact</a></li>
                 <li><a class="disable" href="#">&nbsp  </a></li>
-                @if(!isset(Sentry::getUser()->email ))
+                @if(!isset($logged_user->email ))
              <li id="login">
              <a  href="{{URL::to('/login')}}" ><span class="glyphicon glyphicon-user"></span> Login</a>
             </li>            
              @else
                 <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <span>{{Sentry::getUser()->email}} <i class="caret"></i></span>
+                                <span>{{$logged_user->email}} <i class="caret"></i></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header bg-light-blue">
                                     <img src="{{URL::asset('images/avatar.png')}}" class="img-circle" alt="User Image" />
                                     <p>
-                                        Jane Doe - Web Developer
+                                        {{$logged_user->email}}
                                         <small>Member since Nov. 2012</small>
                                     </p>
                                 </li>
@@ -80,10 +80,10 @@
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
                                     <div class="pull-left">
-                                        <a href="#" class="btn btn-danger btn-flat">Profile</a>
+                                        <a href="#" class="btn btn-success btn-flat">Sign up</a>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="{{ URL::to('/user/logout') }}" class="btn btn-success btn-flat">Sign out</a>
+                                        <a href="{{ URL::to('/user/logout') }}" class="btn btn-danger btn-flat">Logout</a>
                                     </div>
                                 </li>
                             </ul>
