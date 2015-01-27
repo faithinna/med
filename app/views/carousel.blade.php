@@ -8,7 +8,7 @@ Indicators -->
 </ol>       
 <div class="carousel-inner" role="listbox"> 
 <div class="item active"> 
-<img data-src="holder.js/1200%x400%/social"  class="img-responsive" alt="First slide">
+<img data-src="holder.js/1200%x500%/social"  class="img-responsive" alt="First slide">
 <div class="container">             
 <div class ="carousel-caption">
 <div class="text-center">
@@ -34,7 +34,7 @@ elit.
 </div>         
 </div>         
 <div class="item">
-<img data-src="holder.js/1200x400/#6f5499:#cdbfe3/text:Electronic Health record"  class="img-responsive" alt="Third slide">           
+<img data-src="holder.js/1200x500/#6f5499:#cdbfe3/text:Electronic Health record"  class="img-responsive" alt="Third slide">           
 <div class="container"> 
 <div
 class="carousel-caption">              <!-- <h1>One more for good

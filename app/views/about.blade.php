@@ -6,13 +6,10 @@
 <style type="text/css">
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus
  {
-color: #a94442;
-background-color: #f2dede;
+background-color:#d9edf7;
+border-color: #d9edf7;
+color:#4F5254;
 }
-.navbar
-  {
-    opacity: 0.8;
-  }
 </style>
 <div>
     <ul class="breadcrumb alert alert-info">
@@ -27,7 +24,7 @@ background-color: #f2dede;
 </div>
   <div class="row">
   <div class="col-lg-9">
-    <div id="contact_border" class="panel panel-danger">
+    <div id="contact_border" class="panel panel-info">
         <div  class="panel-heading">Overview</div>
           <div class="panel-body">                    
 <div class="tab-content">
@@ -86,7 +83,7 @@ background-color: #f2dede;
     </div>
   </div>
   <div class="col-lg-3">
-      <div class="panel panel-danger">
+      <div class="panel panel-info">
         <div class="panel-heading">About</div>
           <div class="panel-body">
             <ul class="nav nav-pills nav-stacked" role="tablist" id="newsTab">

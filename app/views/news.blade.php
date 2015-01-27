@@ -6,13 +6,10 @@
 <style type="text/css">
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus
  {
-background-color: #9BC2E3;
-border-color: #9BC2E3;
+background-color:#d9edf7;
+border-color: #d9edf7;
+color:#4F5254;
 }
-.navbar
-  {
-    opacity: 0.8;
-  }
 </style>
 <div>
     <ul class="breadcrumb alert alert-info">
@@ -27,7 +24,7 @@ border-color: #9BC2E3;
 </div>
 <div class="row">
         	<div class="col-lg-9 col-md-9 col-sm-9">             
-                <div id="contact_border" class="panel panel-primary">
+                <div id="contact_border" class="panel panel-info">
                     <div class="panel-heading">News highlights</div> 
                     <div class="panel-body"> 
                      <!-- Projects Row --> 
@@ -57,8 +54,8 @@ border-color: #9BC2E3;
                   </div>
                 </div>
            <div class="col-lg-3 col-md-3 col-sm-3">
-                <div id="contact_border"  class="panel panel-primary">
-                    <div class="panel-heading"><a style="color:#fff" href="{{URL::route('events')}}"><i class="fa fa-calendar"></i> Events</a></div>
+                <div  class="panel panel-info">
+                    <div class="panel-heading"><a style="text-decoration:none" href="{{URL::route('events')}}"><i class="fa fa-calendar"></i> Events</a></div>
                     <div class="panel-body">                                        
                           
                  <ul class="nav nav-pills nav-stacked" role="tablist" id="myTab">
@@ -70,8 +67,8 @@ border-color: #9BC2E3;
                     </div>
                 </div>
 
-                <div id="contact_border"  class="panel panel-primary">
-                    <div class="panel-heading"><a style="color:#fff" href="{{URL::route('announcements')}}"><i class="fa fa-bullhorn"></i> Announcements</a></div>
+                <div  class="panel panel-info">
+                    <div class="panel-heading"><a style="text-decoration:none" href="{{URL::route('announcements')}}"><i class="fa fa-bullhorn"></i> Announcements</a></div>
                     <div class="panel-body">                                        
                        
                  <ul class="nav nav-pills nav-stacked" role="tablist" id="myTab">

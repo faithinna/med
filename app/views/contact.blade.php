@@ -4,11 +4,6 @@
 @stop
 @section('content')
 <style type="text/css">
-
-.navbar
-  {
-    opacity: 0.8;
-  }
 </style>
     <ul class="breadcrumb alert alert-info">
     <li><a href="{{URL::route('home')}}">Home</a></li>
@@ -22,7 +17,7 @@
 
         <div class="row">
         	<div class="col-lg-9 col-md-9 col-sm-9">
-                <div id="contact_border"  class="panel panel-success">
+                <div id="contact_border"  class="panel panel-info">
                     <div class="panel-heading">Contact Us</div>
                     <div class="panel-body">
                     <h5>For any enquiries, please fill the form below;</h5>
@@ -72,7 +67,7 @@
                 </div>
            </div>
             <div  class="col-lg-3 col-md-3 col-sm-3">
-                <div class="panel panel-success">
+                <div class="panel panel-info">
                     <div class="panel-heading">Contact Info</div>
                     <div class="panel-body">
                     <img class="img-responsive" src="{{ asset('images/contact.jpg') }}" alt="Generic placeholder image"

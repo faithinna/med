@@ -21,7 +21,7 @@
   <body>
     <div class="navbar-wrapper">
       <div class="container-fluid">
-        <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
           <div class="container">
             <div class="navbar-header">
                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -30,7 +30,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="{{URL::route('home')}}"><span style="color:crimson;" class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>&nbsp MediFile</a>
+              <a style="color:white;font-size:28px;font-weight:900" class="navbar-brand" href="{{URL::route('home')}}"><span style="color:crimson" class="fa fa-folder-open" aria-hidden="true"></span>&nbsp{{Config::get('laravel-authentication-acl::app_name')}}</a>
              </div>
              <div id="navbar" class="navbar-collapse collapse">
               <ul id="nav_list"  class="nav navbar-nav  navbar-right">
@@ -52,14 +52,42 @@
              <a  href="{{URL::to('/login')}}" ><span class="glyphicon glyphicon-user"></span> Login</a>
             </li>            
              @else
-                <li id="login_user" class="dropdown">
-                <a  href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> {{Sentry::getUser()->email}} <span class="caret"></span>
-                </a>
-                  <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                    <li><a href="{{ URL::to('/user/logout') }}">Logout</a></li>
-                    <li><a href="#">Profile</a></li>
-                  </ul>
-              </li> 
+                <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span>{{Sentry::getUser()->email}} <i class="caret"></i></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header bg-light-blue">
+                                    <img src="{{URL::asset('images/avatar.png')}}" class="img-circle" alt="User Image" />
+                                    <p>
+                                        Jane Doe - Web Developer
+                                        <small>Member since Nov. 2012</small>
+                                    </p>
+                                </li>
+                                <!-- Menu Body -->
+                                <li class="user-body">
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Followers</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Sales</a>
+                                    </div>
+                                    <div class="col-xs-4 text-center">
+                                        <a href="#">Friends</a>
+                                    </div>
+                                </li>
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a href="#" class="btn btn-danger btn-flat">Profile</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="{{ URL::to('/user/logout') }}" class="btn btn-success btn-flat">Sign out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
               @endif 
                  
               </ul>

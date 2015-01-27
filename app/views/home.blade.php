@@ -3,8 +3,9 @@
 @section('content')
 <style type="text/css">
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
-background-color: #bce8f1;
+background-color:#d9edf7;
 border-color: #d9edf7;
+color:#4F5254;
 }
 </style>
     <ul class="breadcrumb alert alert-info">
@@ -107,7 +108,7 @@ border-color: #d9edf7;
        </div>  
      <div class="col-lg-3 col-md-3 col-sm-3">
                 <div id="contact_border"  class="panel panel-info">
-                    <div class="panel-heading"><a  href="{{URL::route('events')}}"><i class="fa fa-calendar"></i> Events</a></div>
+                    <div class="panel-heading"><a style="text-decoration:none"  href="{{URL::route('events')}}"><i class="fa fa-calendar"></i> Events</a></div>
                     <div class="panel-body">                                        
             <ul class="nav nav-pills nav-stacked" role="tablist" id="newsTab">
             <li role="presentation" class="active"><a href="#Overview" aria-controls="Overview" role="tab" data-toggle="tab">Overview</a></li>
@@ -118,7 +119,7 @@ border-color: #d9edf7;
                 </div>
 
             <div id="contact_border"  class="panel panel-info">
-                    <div class="panel-heading"><a href="{{URL::route('announcements')}}"><i class="fa fa-bullhorn"></i> Announcements</a></div>
+                    <div class="panel-heading"><a style="text-decoration:none"  href="{{URL::route('announcements')}}"><i class="fa fa-bullhorn"></i> Announcements</a></div>
                     <div class="panel-body">                                        
             <ul class="nav nav-pills nav-stacked" role="tablist" id="eventTab">
              <li role="presentation" class="active"><a href="#Overview" aria-controls="Overview" role="tab" data-toggle="tab">Overview</a></li>

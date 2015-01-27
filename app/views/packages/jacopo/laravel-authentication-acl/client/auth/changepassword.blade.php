@@ -7,7 +7,7 @@ Change password
     <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4">
         <div class="panel panel-info">
             <div class="panel-heading">
-               <h3 class="panel-title bariol-thin"><span style="color:crimson;" class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>&nbsp {{Config::get('laravel-authentication-acl::app_name')}}</h3>
+             <h3 class="panel-title"><a href="{{URL::route('home')}}" style="text-decoration:none;font-weight:bolder"><span style="color:crimson;" class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>&nbsp {{Config::get('laravel-authentication-acl::app_name')}}</a></h3>
             </div>
             <div class="panel-body">
                 <h5><strong>Change your password</strong></h5>

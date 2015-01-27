@@ -1,7 +1,7 @@
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid margin-right-15">
         <div class="navbar-header">
-            <a class="navbar-brand bariol-thin" href="#"><span style="color:crimson;" class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>&nbsp {{$app_name}}</a>
+            <a style="font-size:19px;font-weight:900" class="navbar-brand" href="{{URL::route('home')}}"><span style="color:crimson;" class="fa fa-folder-open" aria-hidden="true"></span>&nbsp {{$app_name}}</a>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-main-menu">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
