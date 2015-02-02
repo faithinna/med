@@ -72,9 +72,11 @@ a:hover {
 }
 .nav-sidebar > .active > a {
     color: #fff;
-    background-color: #5bc0de;
+    background-color: crimson;
 }
-
+.nav-sidebar > .active > a:hover {
+    background-color: black;
+}
 
 /*
  * Main content

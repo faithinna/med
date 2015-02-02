@@ -10,10 +10,10 @@
     <meta name="author" content="">
 
 
-    {{ HTML::style('packages/jacopo/laravel-authentication-acl/css/bootstrap.min.css') }}
-    {{ HTML::style('packages/jacopo/laravel-authentication-acl/css/style.css') }}
-    {{ HTML::style('packages/jacopo/laravel-authentication-acl/css/baselayout.css') }}
-    {{ HTML::style('packages/jacopo/laravel-authentication-acl/css/fonts.css') }}
+    {{ HTML::style('css/bootstrap.min.css') }}
+    {{ HTML::style('css/style.css') }}
+    {{ HTML::style('css/baselayout.css') }}
+    {{ HTML::style('css/fonts.css') }}
     {{ HTML::style('css/font-awesome.css') }}
 
     @yield('head_css')

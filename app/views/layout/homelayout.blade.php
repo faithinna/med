@@ -59,7 +59,11 @@
                             <ul class="dropdown-menu">
                                 <!-- User image -->
                                 <li class="user-header bg-light-blue">
-                                    <img src="{{URL::asset('images/avatar.png')}}" class="img-circle" alt="User Image" />
+            @if(isset($logged_user) && $logged_user->user_profile()->count())
+           <img src="{{$logged_user->user_profile()->first()->presenter()->avatar(20)}}" class="img-thumbnails" width="20">
+           @else
+          <img src="{{URL::asset('/packages/jacopo/laravel-authentication-acl/images/avatar.png')}}" class="img-thumbnails" width="20">
+            @endif
                                     <p>
                                         {{$logged_user->email}}
                                         <small>Member since Nov. 2012</small>
@@ -80,7 +84,7 @@
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
                                     <div class="pull-left">
-                                        <a href="#" class="btn btn-success btn-flat">Sign up</a>
+                                        <a href="{{ URL::to('/user/signup') }}" class="btn btn-success btn-flat">Register</a>
                                     </div>
                                     <div class="pull-right">
                                         <a href="{{ URL::to('/user/logout') }}" class="btn btn-danger btn-flat">Logout</a>
